@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+    {% block sub_conent %}
+        <br>
+        <img src="{{ url_for('static',filename='images/watson1.png') }}", height="250" width="250">
+        <br>
+        <form method="POST">
+            <input type="text" name="name" placeholder="Enter your name"/>
+            <input type="password" name="password" placeholder="Enter your password"/>
+            <input type="text" name="age" placeholder="Enter your age"/>
+            <input type="submit" value="Submit"/>
+        </form>
+        <br>
+        <h1>{{ session['users']}}</h1>
+    {% endblock %}
