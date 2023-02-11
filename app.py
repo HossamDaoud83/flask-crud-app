@@ -9,7 +9,7 @@ app = Flask(__name__)
 Bootstrap(app)
 
 # MySQL configurations
-db = yaml.load(open('db.yaml'), Loader=yaml.FullLoader)
+db = yaml.load(open('D:/Python Projects/Flask/flask-crud-Github/db.yaml'), Loader=yaml.FullLoader)
 
 app.config['MYSQL_HOST'] = db['mysql_host']
 app.config['MYSQL_USER'] = db['mysql_user']
